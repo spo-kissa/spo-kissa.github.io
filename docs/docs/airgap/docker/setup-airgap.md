@@ -35,13 +35,21 @@ import TabItem from '@theme/TabItem';
 
     3. ZIP ファイルを右クリックし、メニューから `全て展開...` を選択します
 
+    ![](/img/airgap/docker/win-zip-popup-menu.png)
+
     4. `圧縮(ZIP形式)フォルダーの展開` ダイアログで展開先を `C:\Cardano` にし `展開` を選択します
 
+    ![](/img/airgap/docker/win-unzip-dialog.png)
+
     5. `C:\Cardano` ディレクトリ内に `airgap` ディレクトリが作成されている事を確認します
+
+    ![](/img/airgap/docker/win-unzip-airgap-folder.png)
 
     6. `airgap` ディレクトリの名称を `airgap-ticker` に変更します
 
     7. `airgap-ticker` ディレクトリを右クリックし `ターミナルで開く` を選択します
+
+    ![](/img/airgap/docker/win-open-terminal.png)
 
     8. ターミナルで以下のコマンドを実行します
 
@@ -50,6 +58,9 @@ import TabItem from '@theme/TabItem';
     ```
 
     9. ターミナルのプロンプトが緑色で `cardano@xxxxxxx:~$` と表示されれば、初期設定は完了です
+
+    ![](/img/airgap/docker/win-airgap-started.png)
+
   </TabItem>
   <TabItem value="mac" label="macOS">
     1. ターミナルアプリを起動し、以下のコマンドを実行すると、Finder が表示されます
