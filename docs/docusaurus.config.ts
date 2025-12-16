@@ -18,12 +18,12 @@ const config: Config = {
   url: 'https://sunwood-ai-labs.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/docusaurus-gh-pages-starter/',
+  baseUrl: '/spo-docs/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'sunwood-ai-labs', // Usually your GitHub org/user name.
-  projectName: 'docusaurus-gh-pages-starter', // Usually your repo name.
+  organizationName: 'spo-kissa', // Usually your GitHub org/user name.
+  projectName: 'spo-docs', // Usually your repo name.
   trailingSlash: false,
 
   onBrokenLinks: 'throw',
@@ -33,8 +33,8 @@ const config: Config = {
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'ja',
+    locales: ['ja'],
   },
 
   presets: [
@@ -46,7 +46,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/sunwood-ai-labs/docusaurus-gh-pages-starter/tree/main/',
+            'https://github.com/spo-kissa/spo-docs/tree/main/',
         },
         blog: {
           showReadingTime: true,
@@ -57,7 +57,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/sunwood-ai-labs/docusaurus-gh-pages-starter/tree/main/',
+            'https://github.com/spo-kissa/spo-docs/tree/main/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -89,7 +89,7 @@ const config: Config = {
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/sunwood-ai-labs/docusaurus-gh-pages-starter',
+          href: 'https://github.com/spo-kissa/spo-docs',
           label: 'GitHub',
           position: 'right',
         },
@@ -133,7 +133,7 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/sunwood-ai-labs/docusaurus-gh-pages-starter',
+              href: 'https://github.com/spo-kissa/spo-docs',
             },
           ],
         },
