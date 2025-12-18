@@ -78,6 +78,16 @@ Enterキーを押下するとコールドキーファイルのチェックがお
 
 ## ctool のヘッダーの見方
 
+![Header](/img/airgap/ctool/header.png)
+
+- SPO JAPAN GUILD TOOL for Airgap
+- vX.X.XX on Dockerfile vYY.Y.Y.Z
+  - X.X.XX
+    - ctoolのバージョンを表します
+  - YY.Y.Y
+    - cardano-cliが含まれていたノードバージョンが設定されます
+  - .Z
+    - Dockerfileのリビジョン番号を表します
 - Network
   - ネットワークを表します
     - mainnet

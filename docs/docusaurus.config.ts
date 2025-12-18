@@ -5,9 +5,9 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'Docusaurus GitHub Pages Starter',
+  title: 'SPO Kissa Documentation',
   tagline: 'Effortless documentation with automated deployment',
-  favicon: 'img/favicon-Pteranodon.ico',
+  favicon: 'img/favicon.png',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -79,7 +79,7 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/Pteranodon-social-card.jpg',
+    image: 'img/spo-kissa-social-card.jpg',
     navbar: {
       title: 'SPO Kissa Documentation',
       logo: {
