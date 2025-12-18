@@ -6,7 +6,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'SPO Kissa Documentation',
-  tagline: 'Effortless documentation with automated deployment',
+  tagline: 'Japanese documentation for Cardano SPOs (Stake Pool Operators)',
   favicon: 'img/favicon.png',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
