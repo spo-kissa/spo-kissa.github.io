@@ -15,7 +15,8 @@ const config: Config = {
   },
 
   plugins: [
-    'docusaurus-plugin-sass'
+    'docusaurus-plugin-sass',
+    'docusaurus-plugin-image-zoom',
   ],
 
   // Set the production url of your site here
@@ -168,6 +169,15 @@ const config: Config = {
     },
     mermaid: {
       theme: { light: 'neutral', dark: 'forest' },
+    },
+    zoom: {
+      selector: '.markdown :not(em) > img',
+      background: {
+        light: 'rgb(255, 255, 255)',
+        dark: 'rgb(50, 50, 50)'
+      },
+      config: {
+      },
     },
   } satisfies Preset.ThemeConfig,
 };
