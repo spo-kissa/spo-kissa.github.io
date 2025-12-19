@@ -1,10 +1,8 @@
 <!-- SOCIAL CARD -->
 
-![](docs/static/img/Pteranodon-social-card.jpg)
+![](docs/static/img/spo-kissa-social-card.jpg)
 
-# Pteranodon Docs — Docusaurus × GitHub Pages スターター
-
-数分で **開発者フレンドリーなドキュメントサイト** を構築・バージョン管理・公開。
+# SPO-Kissa Docs — Docusaurus × GitHub Pages
 
 <p align="center">
   <a href="https://github.com/Sunwood-ai-labs/docusaurus-gh-pages-starter/actions/workflows/gh_actions_deploy.yml"><img src="https://github.com/Sunwood-ai-labs/docusaurus-gh-pages-starter/actions/workflows/gh_actions_deploy.yml/badge.svg" alt="CI/CD"></a>
@@ -13,8 +11,6 @@
   <img src="https://img.shields.io/badge/Docusaurus-v3-2ecc71" alt="Docusaurus v3">
   <img src="https://img.shields.io/badge/TypeScript-Ready-3178c6?logo=typescript" alt="TypeScript ready">
 </p>
-
-> **なぜ Pteranodon Docs なのか？** README だけでは検索・ナビゲーション・多言語対応・バージョニングなどの要求を満たせません。本リポジトリは **Docusaurus v3 + GitHub Actions** による自動デプロイ環境をワンクリックで提供します。
 
 ---
 
