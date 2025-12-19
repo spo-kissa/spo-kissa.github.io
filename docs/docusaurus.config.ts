@@ -14,7 +14,9 @@ const config: Config = {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
   },
 
-  plugins: [ 'docusaurus-plugin-sass' ],
+  plugins: [
+    'docusaurus-plugin-sass'
+  ],
 
   // Set the production url of your site here
   url: 'https://docs.spo-kissa.org',
