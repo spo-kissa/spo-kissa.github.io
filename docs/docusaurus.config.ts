@@ -166,6 +166,10 @@ const config: Config = {
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
+      additionalLanguages: [
+        'powershell',
+        'bash'
+      ],
     },
     mermaid: {
       theme: { light: 'neutral', dark: 'forest' },
@@ -177,6 +181,11 @@ const config: Config = {
         dark: 'rgb(50, 50, 50)'
       },
       config: {
+      },
+    },
+    docs: {
+      sidebar: {
+        hideable: true,
       },
     },
   } satisfies Preset.ThemeConfig,
