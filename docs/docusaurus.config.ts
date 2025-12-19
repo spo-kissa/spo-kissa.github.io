@@ -15,6 +15,7 @@ const config: Config = {
   },
 
   plugins: [
+    'docusaurus-plugin-sass',
     'docusaurus-plugin-image-zoom',
   ],
 
