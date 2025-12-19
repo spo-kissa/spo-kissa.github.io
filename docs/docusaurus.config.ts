@@ -14,6 +14,8 @@ const config: Config = {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
   },
 
+  plugins: [ 'docusaurus-plugin-sass' ],
+
   // Set the production url of your site here
   url: 'https://docs.spo-kissa.org',
   // Set the /<baseUrl>/ pathname under which your site is served
@@ -71,7 +73,10 @@ const config: Config = {
           onUntruncatedBlogPosts: 'warn',
         },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: [
+            './src/css/custom.css',
+            './src/css/custom.scss',
+          ],
         },
         gtag: {
           trackingID: 'G-JQKRF76E7P',
