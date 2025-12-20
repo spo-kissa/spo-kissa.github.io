@@ -4,6 +4,7 @@ position: 1
 ---
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
+import TemplateCodeGenerator from '@site/src/components/TemplateCodeGenerator';
 
 # Grafana の設定
 
@@ -64,31 +65,27 @@ Midnight Node の状況を Grafana で監視する設定方法を説明します
     sudo systemctl enable --now prometheus.service prometheus-node-exporter
     ```
 
-    ### Midnight ノードの IPアドレスを設定
-    
-    XX.XXX.XX.XXX を Midnight ノードの IPアドレスに置き換えてください
-
-    ```bash
-    MID_NODE_IP=XX.XXX.XX.XXX
-    ```
-
     ### Prometheus の設定を書き換え
 
-    ```bash
-    sudo tee /etc/prometheus/prometheus.yml <<EOF >/dev/null
-    global:
-      scrape_interval: 15s # By default, scrape targets every 15 seconds.
+    <TemplateCodeGenerator
+      title="MidnightノードのIPアドレスを入力しコマンドをコピーしてください"
+      initialVars={{
+        MID_NODE_IP: 'XXX.XXX.XX.XX',
+      }}
+    >{`sudo tee /etc/prometheus/prometheus.yml <<EOF >/dev/null
+global:
+  scrape_interval: 15s # By default, scrape targets every 15 seconds.
 
-    scrape_configs:
-       - job_name: 'midnight-pool-preview'
-         scrape_interval: 10s
-         metrics_path: /metrics
-         static_configs:
-           - targets: ['${MID_NODE_IP}:9615']
-             labels:
-               alias: 'midnight-validator-preview'
-    EOF
-    ```
+scrape_configs:
+   - job_name: 'midnight-pool-preview'
+     scrape_interval: 10s
+     metrics_path: /metrics
+     static_configs:
+       - targets: ['{{MID_NODE_IP}}:9615']
+         labels:
+           alias: 'midnight-validator-preview'
+EOF`}
+    </TemplateCodeGenerator>
 
     ### Grafana プラグインをインストール
 
@@ -110,21 +107,17 @@ Midnight Node の状況を Grafana で監視する設定方法を説明します
 <Tabs groupId="node" queryString="node">
   <TabItem value="midnight" label="Midnightノード">
 
-    ### リレーノードの IPアドレスを設定
-    
-    XX.XXX.XX.XXX を リレーノードの IPアドレスに置き換えてください
-
-    ```bash
-    RELAY_IP=XX.XXX.XX.XXX
-    ```
-
     ### ファイアーウォールの設定
     
     リレーノードからメトリクスポートへのアクセスを許可します
 
-    ```bash
-    sudo ufw allow from ${RELAY_IP} to any port 9615 proto tcp comment 'Grafana'
-    ```
+    <TemplateCodeGenerator
+      title="リレーノードの IPアドレスを入力してコマンドをコピーしてください"
+      initialVars={{
+        RELAY_IP: 'XX.XXX.XX.XXX',
+      }}
+    >{`sudo ufw allow from {{RELAY_IP}} to any port 9615 proto tcp comment 'Grafana'`}
+    </TemplateCodeGenerator>
 
   </TabItem>
 </Tabs>

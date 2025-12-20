@@ -1,0 +1,122 @@
+.wrapper {
+  display: grid;
+  gap: 16px;
+}
+
+.header {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  gap: 12px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+.badges {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-color-emphasis-100);
+}
+
+.card {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+  border-radius: 14px;
+  padding: 14px;
+  box-shadow: var(--ifm-global-shadow-lw);
+  display: grid;
+  gap: 12px;
+}
+
+.sectionTitle {
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.help {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.col6 {
+  grid-column: span 6;
+}
+.col4 {
+  grid-column: span 4;
+}
+.col12 {
+  grid-column: span 12;
+}
+
+/* 画面が狭いときは1列 */
+@media (max-width: 996px) {
+  .col6,
+  .col4 {
+    grid-column: span 12;
+  }
+}
+
+.input,
+.textarea {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-color);
+  padding: 10px 12px;
+  font-size: 14px;
+  outline: none;
+  transition: box-shadow 120ms ease, border-color 120ms ease;
+}
+
+.input:focus,
+.textarea:focus {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--ifm-color-primary) 25%, transparent);
+}
+
+.label {
+  display: grid;
+  gap: 6px;
+}
+
+.labelTop {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.labelName {
+  font-size: 12px;
+  font-weight: 700;
+  opacity: 0.85;
+}
+
+.pill {
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-color-emphasis-100);
+  opacity: 0.95;
+}
