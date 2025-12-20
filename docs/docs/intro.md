@@ -2,46 +2,24 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# スタートガイド
 
-Let's discover **Docusaurus in less than 5 minutes**.
+SPO-Kissa では、カルダノ関連のドキュメントを誰もが自由に閲覧・編集出来る場として整備しています
 
-## Getting Started
+## 始めに
 
-Get started by **creating a new site**.
+既存のドキュメントを読んでみましょう！
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+### 何か欲しい情報がありますか？
 
-### What you'll need
+- [Issues](https://github.com/spo-kissa/spo-kissa.github.io/issues) ページからリクエストを送ることが出来ます:
+  - ただし、全てのリクエストが受け入れられるとは限りません
 
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+### 提供出来る情報がありますか？
 
-## Generate a new site
+- [Issues](https://github.com/spo-kissa/spo-kissa.github.io/issues) ページから情報提供をすることができます
+- [Git](https://github.com/spo-kissa/spo-kissa.github.io) をクローンしてプルリクエストを送ることが出来ます
 
-Generate a new Docusaurus site using the **classic template**.
+## サポートについて
 
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+サポートが必要な場合は、[SPO Kissa](https://discord.gg/w7DYV3mSQb)で著者などに質問できます。
