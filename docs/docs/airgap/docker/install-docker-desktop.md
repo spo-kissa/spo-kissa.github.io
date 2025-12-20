@@ -1,4 +1,5 @@
 ---
+sidebar_position: 2
 title: Docker Desktop のインストール
 ---
 import Tabs from '@theme/Tabs';
