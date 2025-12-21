@@ -1,0 +1,27 @@
+services:
+  dev:
+    image: node:20-bookworm-slim
+    working_dir: /docs
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development
+      - CHOKIDAR_USEPOLLING=true
+      - WATCHPACK_POLLING=true
+    volumes:
+      - ./docs:/docs
+      - node_modules:/docs/node_modules
+    command: >
+      bash -lc "
+      npm ci && npm run start -- --host 0.0.0.0;
+      "
+  
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+
+volumes:
+  node_modules:
