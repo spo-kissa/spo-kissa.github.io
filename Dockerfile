@@ -4,7 +4,7 @@ FROM node:20-bookworm-slim AS build
 
 WORKDIR /docs
 
-COPY package.json package-lock.json* ./
+COPY docs/package.json docs/package-lock.json* ./
 
 RUN npm ci
 
