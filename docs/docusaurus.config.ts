@@ -39,14 +39,18 @@ const config: Config = {
   },
   onBrokenLinks: 'throw',
 
-  themes: ['@docusaurus/theme-mermaid'],
+  themes: [
+    '@docusaurus/theme-mermaid'
+  ],
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'ja',
-    locales: ['ja'],
+    locales: [
+      'ja'
+    ],
   },
 
   presets: [
@@ -107,6 +111,12 @@ const config: Config = {
           label: 'Docs',
         },
         // {to: '/blog', label: 'Blog', position: 'left'},
+        {
+          href: "https://discord.gg/w7DYV3mSQb",
+          position: "right",
+          className: "header-discord-link",
+          "aria-label": "Discord",
+        },
         {
           type: 'search',
           position: 'right',
