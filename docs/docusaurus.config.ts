@@ -198,6 +198,11 @@ const config: Config = {
         hideable: true,
       },
     },
+    algolia: {
+      appId: "LYJLA5Z1RY",
+      apiKey: "6032c2fc1d7ccd09860a8559ea8c2127",
+      indexName: "SPO-Kissa Documentation Site",
+    },
   } satisfies Preset.ThemeConfig,
 };
 
