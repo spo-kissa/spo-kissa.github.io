@@ -57,7 +57,7 @@ cargo install --path . --bin mblog --locked --force
 mblog block \
   --keystore-path $HOME/midnight-node-docker/data/chains/partner_chains_template/keystore \
   --db $HOME/midnight-node-docker/mblog.db \
-  --tz Asia\Tokyo \
+  --tz Asia/Tokyo \
   --watch
 ```
 
