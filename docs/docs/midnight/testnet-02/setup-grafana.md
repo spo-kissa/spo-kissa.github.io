@@ -1,12 +1,11 @@
 ---
-description: Grafana の設置
-position: 1
+sidebar_position: 1
+title: Grafana の設定
+description: Grafana の設置方法
 ---
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import TemplateCodeGenerator from '@site/src/components/TemplateCodeGenerator';
-
-# Grafana の設定
 
 Midnight Node の状況を Grafana で監視する設定方法を説明します
 
