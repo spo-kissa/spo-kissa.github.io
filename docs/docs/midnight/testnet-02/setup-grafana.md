@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 11
 title: Grafana の設定
 description: Grafana の設置方法
 ---
