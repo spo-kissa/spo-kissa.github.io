@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 12
 title: ブロックログの設定
 description: Midnight-blocklog のセットアップ方法について
 ---

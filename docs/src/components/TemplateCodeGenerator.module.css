@@ -1,10 +1,8 @@
 .wrapper {
-  display: grid;
   gap: 16px;
 }
 
 .header {
-  display: flex;
   align-items: baseline;
   justify-content: flex-start;
   gap: 12px;
@@ -55,7 +53,7 @@
 .grid {
   display: grid;
   gap: 12px;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(18, 1fr);
 }
 
 .col6 {
