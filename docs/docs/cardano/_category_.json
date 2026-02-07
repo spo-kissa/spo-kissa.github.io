@@ -1,0 +1,8 @@
+{
+  "label": "Cardano",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Cardanoに関するドキュメント"
+  }
+}

@@ -1,0 +1,8 @@
+{
+    "label": "Cardano Node",
+    "position": 2,
+    "link": {
+        "type": "generated-index",
+        "description": "Cardanoノードに関するドキュメント"
+    }
+}
