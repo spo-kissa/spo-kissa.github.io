@@ -29,12 +29,28 @@ sudo apt update -y && sudo apt upgrade -y
 
 :::
 
-### バイナリをダウンロード
+### 作業ディレクトリ作成
 
 ```bash
 mkdir $HOME/git/cardano-node2
 cd $HOME/git/cardano-node2
 ```
+
+:::info[ここでエラーが発生する場合]
+
+  ここで何かしらのエラーが発生する場合、前回のアップグレード時にディレクトリの名称変更をしていない可能性があります。
+  以下を実行してから、再度実行してみてください。
+
+  ```bash
+  cd $HOME/git
+  rm -rf cardano-node-old
+  mv cardano-node/ cardano-node-old/
+  mv cardano-node2/ cardano-node/
+  ```
+
+:::
+
+### バイナリをダウンロード
 
 ```bash
 wget -q --show-progress https://github.com/IntersectMBO/cardano-node/releases/download/10.5.4/cardano-node-10.5.4-linux.tar.gz
