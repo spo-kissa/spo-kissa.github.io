@@ -53,13 +53,13 @@ cd $HOME/git/cardano-node2
 ### バイナリをダウンロード
 
 ```bash
-wget -q --show-progress https://github.com/IntersectMBO/cardano-node/releases/download/10.7.1/cardano-node-10.7.1-linux.tar.gz
+wget -q --show-progress https://github.com/IntersectMBO/cardano-node/releases/download/10.7.1/cardano-node-10.7.1-linux-amd64.tar.gz
 ```
 
 ### バイナリを解凍する
 
 ```bash
-tar xvf cardano-node-10.7.1-linux.tar.gz ./bin/cardano-node ./bin/cardano-cli
+tar xvf cardano-node-10.7.1-linux-amd64.tar.gz ./bin/cardano-node ./bin/cardano-cli
 ```
 
 ### バイナリのバージョンを確認
