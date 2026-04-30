@@ -11,7 +11,7 @@ echo $(cardano-node version | grep cardano-node)
 
 :::warning[注意]
 
-  cardano-node v10.5.3以外の方はこのマニュアルの対象外となります！
+  cardano-node v10.6.4以外の方はこのマニュアルの対象外となります！
 
 :::
 
@@ -53,13 +53,13 @@ cd $HOME/git/cardano-node2
 ### バイナリをダウンロード
 
 ```bash
-wget -q --show-progress https://github.com/IntersectMBO/cardano-node/releases/download/10.5.4/cardano-node-10.5.4-linux.tar.gz
+wget -q --show-progress https://github.com/IntersectMBO/cardano-node/releases/download/10.7.1/cardano-node-10.7.1-linux.tar.gz
 ```
 
 ### バイナリを解凍する
 
 ```bash
-tar xvf cardano-node-10.5.4-linux.tar.gz ./bin/cardano-node ./bin/cardano-cli
+tar xvf cardano-node-10.7.1-linux.tar.gz ./bin/cardano-node ./bin/cardano-cli
 ```
 
 ### バイナリのバージョンを確認
@@ -72,11 +72,11 @@ $(find $HOME/git/cardano-node2 -type f -name "cardano-node") version
 :::info[以下の戻り値を確認してください]
 
   ```txt
-  cardano-cli 10.11.0.0 - linux-x86_64 - ghc-9.6
-  git rev b0a12592c4e996b57edf5bc5b9109ecc88c2273f
+  cardano-cli 10.16.0.0 - linux-x86_64 - ghc-9.6
+  git rev 045bc187a36ef0cbd236db902b85dd8f202fb059
 
-  cardano-node 10.5.4 - linux-x86_64 - ghc-9.6
-  git rev b0a12592c4e996b57edf5bc5b9109ecc88c2273f
+  cardano-node 10.7.1 - linux-x86_64 - ghc-9.6
+  git rev 045bc187a36ef0cbd236db902b85dd8f202fb059
   ```
 
 :::
@@ -107,18 +107,46 @@ cardano-node version
 :::info[以下の戻り値を確認してください]
 
 ```txt
-cardano-cli 10.11.0.0 - linux-x86_64 - ghc-9.6
-git rev b0a12592c4e996b57edf5bc5b9109ecc88c2273f
+  cardano-cli 10.16.0.0 - linux-x86_64 - ghc-9.6
+  git rev 045bc187a36ef0cbd236db902b85dd8f202fb059
 
-cardano-node 10.5.4 - linux-x86_64 - ghc-9.6
-git rev b0a12592c4e996b57edf5bc5b9109ecc88c2273f
+  cardano-node 10.7.1 - linux-x86_64 - ghc-9.6
+  git rev 045bc187a36ef0cbd236db902b85dd8f202fb059
 ```
 
 :::
 
 ## 設定ファイル更新
 
-ノードバージョン 10.5.3 からアップグレードする場合は更新する必要がありません。
+ノードバージョン 10.6.4 からアップグレードする場合は更新する必要がありません。
+
+## DB更新
+
+### Mithril インストール
+
+### Mithril 環境変数設定
+
+```bash
+export AGGREGATOR_ENDPOINT=https://aggregator.release-mainnet.api.mithril.network/aggregator
+export GENESIS_VERIFICATION_KEY=$(wget -q -O - https://raw.githubusercontent.com/input-output-hk/mithril/main/mithril-infra/configuration/release-mainnet/genesis.vkey)
+export ANCILLARY_VERIFICATION_KEY=$(wget -q -O - https://raw.githubusercontent.com/input-output-hk/mithril/main/mithril-infra/configuration/release-mainnet/ancillary.vkey)
+export SNAPSHOT_DIGEST=latest
+```
+
+### 既存DBを削除
+
+```bash
+rm -rf $NODE_HOME/db
+```
+
+### 最新スナップショットをダウンロード
+
+```bash
+mithril-client cardano-db download \
+  --download-dir $NODE_HOME \
+  --include-ancillary \
+  $SNAPSHOT_DIGEST
+```
 
 ## 作業ディレクトリの整理
 
