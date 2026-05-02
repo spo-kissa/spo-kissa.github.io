@@ -122,7 +122,38 @@ cardano-node version
 
 ## DB更新
 
-### Mithril インストール
+### Mithril-Client ダウンロード
+
+```bash
+cd $HOME/git
+curl --proto '=https' --tlsv1.2 -sSf \
+https://raw.githubusercontent.com/input-output-hk/mithril/refs/heads/main/mithril-install.sh \
+| sh -s -- -c mithril-client -d latest -p $(pwd)
+```
+
+### Mithril-Client インストール
+
+```bash
+sudo install -m 755 mithril-client /usr/local/bin/mithril-client
+```
+
+### ダウンロードファイルを削除
+
+```bash
+rm mithril-client
+```
+
+### Mithril-Client バージョン確認
+
+```bash
+mithril-client -V
+```
+
+### tmux を起動
+
+```bash
+tmux new -s mithril-client
+```
 
 ### Mithril 環境変数設定
 
@@ -146,6 +177,12 @@ mithril-client cardano-db download \
   --download-dir $NODE_HOME \
   --include-ancillary \
   $SNAPSHOT_DIGEST
+```
+
+### tmux を終了
+
+```bash
+exit
 ```
 
 ## 作業ディレクトリの整理
