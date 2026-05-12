@@ -1,0 +1,9 @@
+{
+    "label": "ノードアップデート",
+    "description": "Cardanoノードのアップデートに関するドキュメント",
+    "position": 3,
+    "link": {
+        "type": "generated-index",
+        "description": "Cardanoノードのアップデートに関するドキュメント"
+    }
+}
