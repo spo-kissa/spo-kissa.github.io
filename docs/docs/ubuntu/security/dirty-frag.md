@@ -34,7 +34,7 @@ sudo update-initramfs -u -k all
 ### モジュールのアンロード
 
 ```bash
-sudo rmmod esp4 esp6 rxrpc 2>/dev/null 
+sudo rmmod esp4 esp6 rxrpc 2>/dev/null
 ```
 
 ### モジュールがロードされていないことを確認する
