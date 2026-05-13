@@ -1,6 +1,6 @@
 ---
 title: Dirty Frag 脆弱性
-description: Dirty Frag 脆弱性の確認との対処方法
+description: Dirty Frag 脆弱性の確認と対処方法
 ---
 
 ## 確認方法
