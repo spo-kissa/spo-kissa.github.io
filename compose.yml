@@ -1,6 +1,6 @@
 services:
   dev:
-    image: node:20-bookworm-slim
+    image: node:24-bookworm-slim
     working_dir: /docs
     ports:
       - "3000:3000"
